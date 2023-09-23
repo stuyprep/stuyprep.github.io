@@ -138,6 +138,43 @@ body {
   justify-content: center;
 }
 
+.mycolumn1{
+  float: left;
+  width: 50%;
+  padding: 50px;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mycolumn2{
+  float: left;
+  width: 50%;
+  padding: 50px;
+  padding-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mycolumn1 img,.mycolumn2 img{
+  padding: 20px;
+}
+
+.mycolumn1 h3,.mycolumn2 h3{
+  padding: 0px;
+  font-weight: 600;
+  font-size:27.5px;
+}
+.mycolumn1 p,.mycolumn2 p{
+  padding: 0px;
+  font-weight: 500;
+  font-size:20px;
+}
+
 .cont1::after,
 .cont2::after,
 footer::after,
@@ -156,10 +193,31 @@ footer {
 }
 
 .aboutus{
+  padding-bottom: 75px;
+}
+
+.ourprogram{
+  background-color: #6f58c9;
+  color:white;
+}
+
+.textourprogram{
   text-align: center;
-  padding:200px;
+  display:block;
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textaboutus{
+  text-align: center;
+  /* padding:200px;
   padding-top:0px;
-  padding-bottom:75px;
+  padding-bottom:75px; */
+  display:block;
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutus p{
@@ -236,4 +294,12 @@ footer {
 
 .offcanvas-title {
   color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev, .carousel-indicators {
+    filter: invert(100%);
+}
+.schools{
+  width: 60%;
 }
