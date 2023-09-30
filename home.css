@@ -81,7 +81,7 @@ body {
   font-size: 110%;
 }
 
-.resource .btn {
+.resource .btn,.involve .btn {
   --bs-btn-bg: #BDEDE0;
   --bs-btn-border-color: transparent;
   --bs-btn-color: black;
@@ -90,6 +90,12 @@ body {
   padding: 15px;
   padding-top: 7px;
   padding-bottom: 7px;
+}
+
+.interest{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-evenly;
 }
 
 .button {
