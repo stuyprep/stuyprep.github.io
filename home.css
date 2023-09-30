@@ -52,7 +52,7 @@ body {
   padding-top:50px;
 }
 
-.involve h1,.resource h1{
+.involve h1{
   font-size: 75px;
   font-weight: 600;
   letter-spacing: 1.75px;
@@ -194,7 +194,17 @@ ul li{
   width:80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.resource{
   text-align: center;
+}
+
+.textdetails,.partners{
+  display:block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .details ul{
