@@ -415,3 +415,38 @@ footer {
   padding-top:0px;
   padding-bottom:20px;
 }
+
+@media (max-width: 900px) {
+
+  .content h1 {
+    font-size: clamp(3rem, 9vw, 5rem);
+    letter-spacing: 2px;
+    padding: 20px;
+  }
+
+  .content h3 {
+    font-size: 1.2rem;
+    padding: 15px;
+  }
+
+  .column1,
+  .column2,
+  .mycolumn1,
+  .mycolumn2 {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .footcol,
+  .footcol1,
+  .footcol3 {
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    padding-left: 10px;
+  }
+}

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stuy Prep</title>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
   <link rel="shortcut icon" href="stuypreplogo.png" type="image/png">
@@ -12,10 +13,10 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#BDEDE0;">
-    <div class="container">
+  <nav class="navbar sticky-top navbar-expand-lg" style="background-color:#BDEDE0;">
+    <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="stuypreplogo.png" alt="Stuy Prep Logo" class="img-fluid" style="max-width:70px;">
+        <img src="stuypreplogo.png" alt="Stuy Prep Logo" width="70">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -24,16 +25,20 @@
 
       <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title">Menu</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
 
         <div class="offcanvas-body">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
-            <li class="nav-item"><a class="nav-link" href="ourprogram.html">OUR PROGRAM</a></li>
-
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ourprogram.html">OUR PROGRAM</a>
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="getinvolved.html" data-bs-toggle="dropdown">
                 GET INVOLVED
@@ -43,7 +48,6 @@
                 <li><a class="dropdown-item" href="getinvolved.html#schools">FOR SCHOOLS</a></li>
               </ul>
             </li>
-
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="resources.html" data-bs-toggle="dropdown">
                 RESOURCES
@@ -60,77 +64,66 @@
     </div>
   </nav>
 
-  <section class="intro d-flex align-items-center text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Stuy Prep</h1>
-      <p class="lead mt-3">
-        Providing Free SHSAT Tutoring to Local Middle Schools
+  <section class="intro">
+    <div class="content">
+      <h1>Stuy Prep</h1>
+      <h3>Providing Free SHSAT Tutoring to Local Middle Schools</h3>
+      <div class="button">
+        <a href="getinvolved.html">
+          <button type="button" class="btn">Join Us</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cont1">
+    <div class="column1">
+      <h2>Equal Opportunity for All</h2>
+      <p>
+        Low-income students make up 75% of the NYC high school population, but only
+        40% of those offered a seat at a Specialized High School. We aim to make SHSAT
+        tutoring more accessible to families who may not have the resources to spend
+        thousands of dollars on quality test prep services.
       </p>
-      <a href="getinvolved.html" class="btn btn-dark btn-lg mt-4">
-        Join Us
-      </a>
+    </div>
+
+    <div class="column2">
+      <img src="assets/stuy.jpg" alt="Stuyvesant High School" class="img-fluid">
     </div>
   </section>
 
-  <section class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h2>Equal Opportunity for All</h2>
-        <p>
-          Low-income students make up 75% of the NYC high school population,
-          but only 40% of those offered a seat at a Specialized High School.
-          We aim to make SHSAT tutoring accessible to families who may not have
-          the resources to spend thousands on test prep.
-        </p>
-      </div>
+  <section class="cont2">
+    <div class="column2">
+      <img src="assets/tutoring.jpg" alt="Tutoring" class="img-fluid">
+    </div>
 
-      <div class="col-12 col-md-6 text-center">
-        <img src="assets/stuy.jpg" class="img-fluid rounded" alt="Stuyvesant High School">
-      </div>
+    <div class="column1">
+      <h2>By Students, for Students</h2>
+      <p>
+        Run by students from Stuyvesant High School, many of whom have extensive
+        experience in tutoring, Stuy Prep offers a 6-week intensive virtual SHSAT
+        prep program. Now in our 8th year of operation, we have assisted hundreds
+        of students on their admissions journey.
+      </p>
     </div>
   </section>
 
-  <section class="container py-5">
-    <div class="row align-items-center flex-md-row-reverse">
-      <div class="col-12 col-md-6 mb-4 mb-md-0">
-        <h2>By Students, for Students</h2>
-        <p>
-          Run by students from Stuyvesant High School, Stuy Prep offers a
-          6-week intensive virtual SHSAT prep program. Now in our 8th year,
-          we have assisted hundreds of students on their admissions journey.
-          We welcome prospective volunteer tutors to help with teaching and
-          curriculum building.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-6 text-center">
-        <img src="assets/tutoring.jpg" class="img-fluid rounded" alt="Tutoring">
-      </div>
+  <footer>
+    <div class="footcol1">
+      <p>
+        Find us on
+        <a href="https://epsilon.stuysu.org/stuyprep">Epsilon</a>!
+      </p>
     </div>
-  </section>
 
-  <footer class="bg-light py-4">
-    <div class="container">
-      <div class="row text-center text-md-start align-items-center">
-        <div class="col-12 col-md-4 mb-3">
-          <p>
-            Find us on
-            <a href="https://epsilon.stuysu.org/stuyprep">Epsilon</a>!
-          </p>
-        </div>
+    <div class="footcol">
+      <p>Contact Us</p>
+      <a href="mailto:stuypreptutors@gmail.com">stuypreptutors@gmail.com</a>
+    </div>
 
-        <div class="col-12 col-md-4 mb-3">
-          <p>Contact Us</p>
-          <a href="mailto:stuypreptutors@gmail.com">
-            stuypreptutors@gmail.com
-          </a>
-        </div>
-
-        <div class="col-12 col-md-4 text-center">
-          <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/12134/sleeping-owl-clipart-md.png"
-               class="img-fluid" style="max-width:90px;" alt="Owl">
-        </div>
-      </div>
+    <div class="footcol3">
+      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/12134/sleeping-owl-clipart-md.png"
+           alt="Owl" width="90">
     </div>
   </footer>
 
