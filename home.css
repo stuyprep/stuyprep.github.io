@@ -450,3 +450,28 @@ footer {
     padding-left: 10px;
   }
 }
+
+.footer-fix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  background-color: #bdede0;
+}
+
+.footer-item {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-item p {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .footer-fix {
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+}
