@@ -1,123 +1,141 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Stuy Prep</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="home.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
   <link rel="shortcut icon" href="stuypreplogo.png" type="image/png">
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #BDEDE0">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://stuyprep.github.io/index.html">
-        <img src="stuypreplogo.png"
-          alt="logoplaceholder" width="70" height="me-auto">
+
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:#BDEDE0;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="stuypreplogo.png" alt="Stuy Prep Logo" class="img-fluid" style="max-width:70px;">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+      <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
+
         <div class="offcanvas-body">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ourprogram.html">OUR PROGRAM</a>
-            </li>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="ourprogram.html">OUR PROGRAM</a></li>
+
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="getinvolved.html" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="getinvolved.html" data-bs-toggle="dropdown">
                 GET INVOLVED
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="getinvolved.html">FOR TUTORS</a></li>
                 <li><a class="dropdown-item" href="getinvolved.html#schools">FOR SCHOOLS</a></li>
               </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="resources.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  RESOURCES
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="resources.html">LESSONS</a></li>
-                  <li><a class="dropdown-item" href="resources.html#homeworks">HOMEWORKS</a></li>
-                  <li><a class="dropdown-item" href="resources.html#extra">EXTRA RESOURCES</a></li>
-                </ul>
-                </li>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="resources.html" data-bs-toggle="dropdown">
+                RESOURCES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="resources.html">LESSONS</a></li>
+                <li><a class="dropdown-item" href="resources.html#homeworks">HOMEWORKS</a></li>
+                <li><a class="dropdown-item" href="resources.html#extra">EXTRA RESOURCES</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
-  <section class="intro">
-    <div class="content">
-      <h1>Stuy Prep</h1>
-      <h3>Providing Free SHSAT Tutoring to Local Middle Schools</h3>
-      <div class="button">
-        <a href="getinvolved.html"><button type="button" class="btn btn-dark">Join Us</button></a>
+
+  <section class="d-flex align-items-center text-center" style="min-height:100vh; background:#f8f9fa;">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Stuy Prep</h1>
+      <p class="lead mt-3">
+        Providing Free SHSAT Tutoring to Local Middle Schools
+      </p>
+      <a href="getinvolved.html" class="btn btn-dark btn-lg mt-4">
+        Join Us
+      </a>
+    </div>
+  </section>
+
+  <section class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <h2>Equal Opportunity for All</h2>
+        <p>
+          Low-income students make up 75% of the NYC high school population,
+          but only 40% of those offered a seat at a Specialized High School.
+          We aim to make SHSAT tutoring accessible to families who may not have
+          the resources to spend thousands on test prep.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 text-center">
+        <img src="assets/stuy.jpg" class="img-fluid rounded" alt="Stuyvesant High School">
       </div>
     </div>
   </section>
-  <section class="cont1">
-    <div class="column1">
-      <h2>Equal Opportunity for All</h2>
-      <p>Low-income students make up 75% of the NYC high school population, but only 40% of those offered a seat at a
-        Specialized High School. We aim to make SHSAT tutoring more accessible to families who may not have the
-        resources
-        to spend thousands of dollars on quality test prep services.
-      </p>
-    </div>
-    <div class="column2">
-      <img src="assets/stuy.jpg" alt="stuy" width="450" height="auto">
-    </div>
-  </section>
-  <section class="cont2">
-    <div class="column2">
-      <img src="assets/tutoring.jpg" alt="tutoring" width="500" height="auto">
-    </div>
-    <div class="column1">
-      <h2>By Students, for Students</h2>
-      <p>Run by students from Stuyvesant High School, many of whom have extensive experience in tutoring, Stuy Prep
-        offers
-        a 6-week, intensive, virtual SHSAT prep program to middle school students at our partner schools. Now in our 8th
-        year of
-        operation, we have assisted hundreds of students on their high school admissions journey. We also welcome
-        prospective volunteer tutors to help us with teaching and curriculum building.</p>
+
+  <section class="container py-5">
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-12 col-md-6 mb-4 mb-md-0">
+        <h2>By Students, for Students</h2>
+        <p>
+          Run by students from Stuyvesant High School, Stuy Prep offers a
+          6-week intensive virtual SHSAT prep program. Now in our 8th year,
+          we have assisted hundreds of students on their admissions journey.
+          We welcome prospective volunteer tutors to help with teaching and
+          curriculum building.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 text-center">
+        <img src="assets/tutoring.jpg" class="img-fluid rounded" alt="Tutoring">
+      </div>
     </div>
   </section>
-  <footer>
-    <div class="footcol1">
-      <p>Find us on <a href="https://epsilon.stuysu.org/stuyprep" height="50" width="auto" alt="epsilonlogo">Epsilon</a>!</p>
-    </div>
-    <div class="footcol">
-      <p>Contact Us</p>
-      <a href="mailto:stuypreptutors@gmail.com">stuypreptutors@gmail.com</a>
-    </div>
-    <div class="footcol3">
-      <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/12134/sleeping-owl-clipart-md.png" alt="logoplaceholder" width="90" height="auto">
+
+  <footer class="bg-light py-4">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-center">
+        <div class="col-12 col-md-4 mb-3">
+          <p>
+            Find us on
+            <a href="https://epsilon.stuysu.org/stuyprep">Epsilon</a>!
+          </p>
+        </div>
+
+        <div class="col-12 col-md-4 mb-3">
+          <p>Contact Us</p>
+          <a href="mailto:stuypreptutors@gmail.com">
+            stuypreptutors@gmail.com
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4 text-center">
+          <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/12134/sleeping-owl-clipart-md.png"
+               class="img-fluid" style="max-width:90px;" alt="Owl">
+        </div>
+      </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
-</body>
 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
 </html>
