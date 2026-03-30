@@ -363,6 +363,21 @@ img {
   word-wrap: break-word;
 }
 
+.card-body .btn {
+  display: block;
+  margin-top: 10px;
+}
+
+.card {
+  margin-bottom: 25px;
+}
+
+.card-body {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 @media screen and (max-width: 920px) {
   .column1,
   .column2 {
@@ -404,7 +419,9 @@ img {
 
   .interest {
     padding: 0 15px;
-    gap: 15px;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 25px;
   }
 
   .textdetails, .partners, .resource, .textourprogram, .textaboutus {
