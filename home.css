@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
+:root {
+  --stuyPrepOrange: rgb(255, 194, 102);
+   --stuyPrepOrangeTranslucent: rgb(255, 194, 102, 0.7);
+  --stuyPrepLightGreen: #BDEDE0;
+}
 body {
   font-family: 'Marcellus', serif;
   overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+&::-webkit-scrollbar {
+    display: none;
+}
+
 
 .intro {
   position: relative;
@@ -37,6 +49,11 @@ body {
   padding: 40px 20px;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  background-color: var(--stuyPrepOrangeTranslucent);
+  border-radius: .5rem;
+  margin-top: .4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .aboutus h1{
@@ -69,12 +86,27 @@ body {
 }
 
 .content h3 {
-  padding: 35px 20px;
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding: .5rem .5rem;
+  border-radius: .4rem;
   font-weight: 575;
   font-size: clamp(1rem, 4vw, 1.5rem);
   word-wrap: break-word;
+  background-color: rgba(255, 255, 255,0.7)
+}
+
+.boardDescription {
+ text-align: center;
+}
+
+.boardTitle {
+  color: rgb(123, 78, 14)
+}
+
+.boardMember {
+  border: .3rem  var(--stuyPrepOrange);
+  border-radius: 1rem;
+  background-color: var(--stuyPrepLightGreen);
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -88,6 +120,7 @@ body {
   padding-bottom: 7px;
   font-size: 110%;
 }
+
 
 .resource .btn,.involve .btn {
   --bs-btn-bg: #BDEDE0;
@@ -142,6 +175,7 @@ body {
   display:flex;
   justify-content: right;
 }
+
 
 .footcol1 img{
   padding-left:57px;
@@ -303,6 +337,8 @@ footer::after,
   background-color: #bbdbd1;
   scroll-margin-top: 70px;
 }
+
+
 #homeworks,#extra{
   scroll-margin-top: 70px;
 }
